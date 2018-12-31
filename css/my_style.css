@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 @font-face {
-    font-family: Monserat; /* Имя шрифта */
-    src: url(../fonts/Montserrat-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-family: Monserat;
+    src: url(../fonts/Montserrat-Bold.ttf); 
 }
 
 * {
@@ -292,11 +292,6 @@ body {
     display: -ms-flexbox;
     display: flex;
 }
-
-/*.contact-form-item__input-wrapper*/
-/*{*/
-/*border: 3px double red;*/
-/*}*/
 
 /************** 992 px ИЛИ МЕНЕЕ *************************************************/
 
