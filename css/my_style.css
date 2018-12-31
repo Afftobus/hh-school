@@ -150,55 +150,55 @@ body {
 
 @-webkit-keyframes input-animation {
     0% {
-        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
-        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
+        0 0 0 60px rgba(25, 179, 93, 0);
+        box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
+        0 0 0 60px rgba(25, 179, 93, 0);
     }
     1% {
-        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
-        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 0);
+        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 0);
     }
     10% {
-        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 1);
-        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 1);
+        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 1);
+        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 1);
     }
     100% {
-        -webkit-box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
-        0px 0px 0px 0px rgba(25, 179, 93, 1);
-        box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
-        0px 0px 0px 0px rgba(25, 179, 93, 1);
+        -webkit-box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
+        0 0 0 0 rgba(25, 179, 93, 1);
+        box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
+        0 0 0 0 rgba(25, 179, 93, 1);
     }
 }
 
 @keyframes input-animation {
     0% {
-        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
-        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
+        0 0 0 60px rgba(25, 179, 93, 0);
+        box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
+        0 0 0 60px rgba(25, 179, 93, 0);
     }
     1% {
-        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
-        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 0);
+        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 0);
     }
     10% {
-        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 1);
-        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
-        0px 0px 0px 60px rgba(25, 179, 93, 1);
+        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 1);
+        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
+        0 0 0 60px rgba(25, 179, 93, 1);
     }
     100% {
-        -webkit-box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
-        0px 0px 0px 0px rgba(25, 179, 93, 1);
-        box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
-        0px 0px 0px 0px rgba(25, 179, 93, 1);
+        -webkit-box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
+        0 0 0 0 rgba(25, 179, 93, 1);
+        box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
+        0 0 0 0 rgba(25, 179, 93, 1);
     }
 }
 
