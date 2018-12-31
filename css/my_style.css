@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@font-face {
+    font-family: Monserat; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/main-background.jpg");
+    background-size: cover;
+}
+
+.modal-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 173, 95, 0.8);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e81d6), to(rgba(0, 173, 95, 0.8)));
+    background: -webkit-linear-gradient(top, #0e81d6, rgba(0, 173, 95, 0.8));
+    background: -o-linear-gradient(top, #0e81d6, rgba(0, 173, 95, 0.8));
+    background: linear-gradient(180deg, #0e81d6, rgba(0, 173, 95, 0.8));
+}
+
+.modal-window {
+    width: 1120px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+
+    -ms-flex-direction: row;
+
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*********** WIDE DISPLAY *************************************************/
+/**********contact-info ***************************************************/
+
+.contact-info {
+    padding: 25px;
+    background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-itens-wrapper {
+    width: 300px;
+}
+
+.contact-info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.contact_info-iten__icon {
+    padding-right: 25px;
+    color: white;
+}
+
+.contact-info-item__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-info-item__text {
+    margin-bottom: 45px;
+    font-size: 15px;
+    color: #999;
+}
+
+.contact-info-item__link {
+    color: #00ad5f;
+}
+
+.contact-info-item__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+/**********contact-form ***************************************************/
+
+.contact-form {
+    width: 50%;
+    padding: 55px;
+    background-color: white;
+}
+
+.contact-form-title {
+    font-size: 30px;
+    color: #333;
+    padding: 0;
+}
+
+.contact-form-submit {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(25, 179, 93, 0.99);
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 23px;
+    font-family: 'Monserat', sans-serif;
+    border-radius: 3px;
+}
+
+@-webkit-keyframes input-animation {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+    }
+    1% {
+        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+    }
+    10% {
+        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 1);
+        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 1);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
+        0px 0px 0px 0px rgba(25, 179, 93, 1);
+        box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
+        0px 0px 0px 0px rgba(25, 179, 93, 1);
+    }
+}
+
+@keyframes input-animation {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 0),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+    }
+    1% {
+        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 0);
+    }
+    10% {
+        -webkit-box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 1);
+        box-shadow: 0px 0px 0px 58px rgba(255, 255, 255, 1),
+        0px 0px 0px 60px rgba(25, 179, 93, 1);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
+        0px 0px 0px 0px rgba(25, 179, 93, 1);
+        box-shadow: 0px 0px 0px -2px rgba(255, 255, 255, 1),
+        0px 0px 0px 0px rgba(25, 179, 93, 1);
+    }
+}
+
+.contact-form-item__input {
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    color: #333;
+    padding: 0 25px;
+    outline: 0;
+    border: 1px solid #e6e6e6;
+}
+
+.contact-form-item__input:focus {
+    z-index: 1000;
+    -webkit-animation-name:  input-animation    ;
+    animation-name:  input-animation    ;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    margin: 0;
+    padding: 0 25px;
+    border: 1px solid #e6e6e6;
+}
+
+.contact-form-item__input:focus::-webkit-input-placeholder {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: transparent;
+}
+
+.contact-form-item__input:focus:-ms-input-placeholder {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: transparent;
+}
+
+.contact-form-item__input:focus::-ms-input-placeholder {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: transparent;
+}
+
+.contact-form-item__input:focus::placeholder {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: transparent;
+}
+
+.contact-form-item__input::-webkit-input-placeholder {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-form-item__input:-ms-input-placeholder {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-form-item__input::-ms-input-placeholder {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-form-item__input::placeholder {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-form-item__title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.contact-form-item__title:first-child {
+    margin-top: 60px;
+}
+
+.contact-form-item__inputs-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*.contact-form-item__input-wrapper*/
+/*{*/
+/*border: 3px double red;*/
+/*}*/
+
+/************** 992 px ИЛИ МЕНЕЕ *************************************************/
+
+@media (max-width: 992px) {
+    .contact-info {
+        width: 40%;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+}
+
+/************** 768 px ИЛИ МЕНЕЕ *************************************************/
+@media (max-width: 768px) {
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 55px 35px;
+    }
+
+    .modal-window {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .modal-wrapper {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+/************** 576 px ИЛИ МЕНЕЕ *************************************************/
+@media (max-width: 576px) {
+    .contact-form {
+        width: 100%;
+        padding: 55px 15px;
+    }
+}
