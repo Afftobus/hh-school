@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Monserat;
-    src: url(../fonts/Montserrat-Bold.ttf); 
+    src: url(../fonts/Montserrat-Bold.ttf);
 }
 
 * {
@@ -154,55 +154,62 @@ body {
 
 @-webkit-keyframes input-animation {
     0% {
-        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
-        0 0 0 60px rgba(25, 179, 93, 0);
-        box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
-        0 0 0 60px rgba(25, 179, 93, 0);
+        -webkit-box-shadow: 0 0 0 58px transparent,
+        0 0 0 60px transparent;
+        box-shadow: 0 0 0 58px transparent,
+        0 0 0 60px transparent;
     }
     1% {
-        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 0);
-        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 0);
+        -webkit-box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px transparent;
+        box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px transparent;
     }
     10% {
-        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 1);
-        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 1);
+        -webkit-box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px #19d35d;
+        box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px #19d35d;
     }
     100% {
-        -webkit-box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
-        0 0 0 0 rgba(25, 179, 93, 1);
-        box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
-        0 0 0 0 rgba(25, 179, 93, 1);
+        -webkit-box-shadow: 0 0 0 -2px #fff,
+        0 0 0 0 #19d35d;
+        box-shadow: 0 0 0 -2px #fff,
+        0 0 0 0 #19d35d;
     }
 }
 
 @keyframes input-animation {
     0% {
-        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
-        0 0 0 60px rgba(25, 179, 93, 0);
-        box-shadow: 0 0 0 58px rgba(255, 255, 255, 0),
-        0 0 0 60px rgba(25, 179, 93, 0);
+        border: 2px transparent;
+        -webkit-box-shadow: 0 0 0 58px transparent,
+        0 0 0 60px transparent;
+        box-shadow: 0 0 0 58px transparent,
+        0 0 0 60px transparent;
     }
     1% {
-        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 0);
-        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 0);
+
+        -webkit-box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px transparent;
+        box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px transparent;
     }
     10% {
-        -webkit-box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 1);
-        box-shadow: 0 0 0 58px rgba(255, 255, 255, 1),
-        0 0 0 60px rgba(25, 179, 93, 1);
+
+        -webkit-box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px #19d35d;
+        box-shadow: 0 0 0 58px #fff,
+        0 0 0 60px #19d35d;
+    }
+    99% {
+        border: 2px transparent;
     }
     100% {
-        -webkit-box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
-        0 0 0 0 rgba(25, 179, 93, 1);
-        box-shadow: 0 0 0 -2px rgba(255, 255, 255, 1),
-        0 0 0 0 rgba(25, 179, 93, 1);
+        border: 2px solid #19d35d;
+        -webkit-box-shadow: 0 0 0 -2px #fff,
+        0 0 0 0 #19d35d;
+        box-shadow: 0 0 0 -2px #fff,
+        0 0 0 0 #19d35d;
     }
 }
 
@@ -218,8 +225,9 @@ body {
 
 .contact-form-item__input:focus {
     z-index: 1000;
-    -webkit-animation-name:  input-animation    ;
-    animation-name:  input-animation    ;
+    -webkit-animation-name:  input-animation;
+    animation-name:  input-animation;
+    animation-fill-mode:forwards;
     -webkit-animation-duration: .4s;
     animation-duration: .4s;
     margin: 0;
@@ -336,4 +344,8 @@ body {
         width: 100%;
         padding: 55px 15px;
     }
+    .contact-form-item__inputs-wrapper {
+        flex-direction: column;
+    }
+
 }
